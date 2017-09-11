@@ -148,9 +148,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     @IBAction func spotRandomPokemon(_ sender: Any) {
-
         performSegue(withIdentifier: "PokemonSelect", sender: nil)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
