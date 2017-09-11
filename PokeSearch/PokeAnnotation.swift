@@ -1,4 +1,3 @@
-//
 //  PokeAnnotation.swift
 //  PokeSearch
 //
@@ -8,7 +7,6 @@
 
 import Foundation
 import MapKit
-
 let pokemons = [
     "bulbasaur",
     "ivysaur",

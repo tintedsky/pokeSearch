@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4682CF4A257BFEEA27BB2272 /* Pods_PokeSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E394F9BAF897FE0A289DC1 /* Pods_PokeSearch.framework */; };
+		FC3CF3E91F62FF6E00F529BE /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CF3E81F62FF6E00F529BE /* Pokemon.swift */; };
+		FC3CF3EB1F63103C00F529BE /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CF3EA1F63103C00F529BE /* CollectionVC.swift */; };
+		FC5304981F638737001E84D2 /* Pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC5304971F638737001E84D2 /* Pokemon.ttf */; };
 		FCB1DCD91F5A02A600937B94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB1DCD81F5A02A600937B94 /* AppDelegate.swift */; };
 		FCB1DCDB1F5A02A600937B94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB1DCDA1F5A02A600937B94 /* ViewController.swift */; };
 		FCB1DCDE1F5A02A600937B94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB1DCDC1F5A02A600937B94 /* Main.storyboard */; };
@@ -20,12 +23,16 @@
 		FCB1DD7C1F5BA71700937B94 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB1DD761F5BA71700937B94 /* GFGeoHashQuery.m */; };
 		FCB1DD7D1F5BA71700937B94 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB1DD781F5BA71700937B94 /* GFQuery.m */; };
 		FCB1DD831F5CEEE900937B94 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB1DD821F5CEEE900937B94 /* PokeAnnotation.swift */; };
+		FCBE50861F61C6DB00908D10 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE50851F61C6DB00908D10 /* PokeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73E394F9BAF897FE0A289DC1 /* Pods_PokeSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00C52A8BB38A5AEB407E16C /* Pods-PokeSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokeSearch/Pods-PokeSearch.debug.xcconfig"; sourceTree = "<group>"; };
 		FBAECFB6784D67F779FACA04 /* Pods-PokeSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokeSearch/Pods-PokeSearch.release.xcconfig"; sourceTree = "<group>"; };
+		FC3CF3E81F62FF6E00F529BE /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		FC3CF3EA1F63103C00F529BE /* CollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
+		FC5304971F638737001E84D2 /* Pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pokemon.ttf; sourceTree = "<group>"; };
 		FCB1DCD51F5A02A600937B94 /* PokeSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB1DCD81F5A02A600937B94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCB1DCDA1F5A02A600937B94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 		FCB1DD781F5BA71700937B94 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		FCB1DD7E1F5BA90700937B94 /* PokeSearch-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokeSearch-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		FCB1DD821F5CEEE900937B94 /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
+		FCBE50851F61C6DB00908D10 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FC5304961F6386B7001E84D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC5304971F638737001E84D2 /* Pokemon.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		FCB1DCCC1F5A02A600937B94 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				FCB1DD811F5CEE7500937B94 /* Model */,
+				FCBE50841F61C6A900908D10 /* View */,
 				FCB1DD801F5CEE6700937B94 /* Controller */,
+				FC5304961F6386B7001E84D2 /* Resources */,
 				FCB1DD671F5BA71700937B94 /* GeoFire */,
 				FCB1DCD81F5A02A600937B94 /* AppDelegate.swift */,
 				FCB1DD7E1F5BA90700937B94 /* PokeSearch-Bridging-Header.h */,
@@ -158,6 +176,7 @@
 		FCB1DD801F5CEE6700937B94 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FC3CF3EA1F63103C00F529BE /* CollectionVC.swift */,
 				FCB1DCDA1F5A02A600937B94 /* ViewController.swift */,
 			);
 			name = Controller;
@@ -167,8 +186,17 @@
 			isa = PBXGroup;
 			children = (
 				FCB1DD821F5CEEE900937B94 /* PokeAnnotation.swift */,
+				FC3CF3E81F62FF6E00F529BE /* Pokemon.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FCBE50841F61C6A900908D10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCBE50851F61C6DB00908D10 /* PokeCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +234,7 @@
 				TargetAttributes = {
 					FCB1DCD41F5A02A600937B94 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = DX7CN644UR;
+						DevelopmentTeam = 6WESCS98BF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -236,6 +264,7 @@
 			files = (
 				FCB1DCE31F5A02A600937B94 /* LaunchScreen.storyboard in Resources */,
 				FCB1DCED1F5B9F9800937B94 /* GoogleService-Info.plist in Resources */,
+				FC5304981F638737001E84D2 /* Pokemon.ttf in Resources */,
 				FCB1DCE01F5A02A600937B94 /* Assets.xcassets in Resources */,
 				FCB1DCDE1F5A02A600937B94 /* Main.storyboard in Resources */,
 			);
@@ -308,10 +337,13 @@
 			files = (
 				FCB1DD7A1F5BA71700937B94 /* GFBase32Utils.m in Sources */,
 				FCB1DD831F5CEEE900937B94 /* PokeAnnotation.swift in Sources */,
+				FC3CF3EB1F63103C00F529BE /* CollectionVC.swift in Sources */,
 				FCB1DCDB1F5A02A600937B94 /* ViewController.swift in Sources */,
 				FCB1DD7B1F5BA71700937B94 /* GFGeoHash.m in Sources */,
 				FCB1DCD91F5A02A600937B94 /* AppDelegate.swift in Sources */,
+				FC3CF3E91F62FF6E00F529BE /* Pokemon.swift in Sources */,
 				FCB1DD791F5BA71700937B94 /* GeoFire.m in Sources */,
+				FCBE50861F61C6DB00908D10 /* PokeCell.swift in Sources */,
 				FCB1DD7C1F5BA71700937B94 /* GFGeoHashQuery.m in Sources */,
 				FCB1DD7D1F5BA71700937B94 /* GFQuery.m in Sources */,
 			);
@@ -439,14 +471,15 @@
 			baseConfigurationReference = B00C52A8BB38A5AEB407E16C /* Pods-PokeSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DX7CN644UR;
+				DEVELOPMENT_TEAM = 6WESCS98BF;
 				INFOPLIST_FILE = PokeSearch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.muge.PokeSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PokeSearch-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,14 +488,15 @@
 			baseConfigurationReference = FBAECFB6784D67F779FACA04 /* Pods-PokeSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DX7CN644UR;
+				DEVELOPMENT_TEAM = 6WESCS98BF;
 				INFOPLIST_FILE = PokeSearch/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.muge.PokeSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PokeSearch-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

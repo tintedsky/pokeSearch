@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import FirebaseDatabase
 
-class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, PokemonSentDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -148,12 +148,21 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     @IBAction func spotRandomPokemon(_ sender: Any) {
-        let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
+
+        performSegue(withIdentifier: "PokemonSelect", sender: nil)
         
-        let rand = arc4random_uniform(151) + 1
-        
-        createSighting(forLocation: loc, withPokemon: Int(rand))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PokemonSelect" {
+            let selectVC: CollectionVC = segue.destination as! CollectionVC
+            selectVC.delegate = self
+        }
     }
 
+    func userDidSelectPoke(poke: Pokemon) {
+        let loc = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
+            createSighting(forLocation: loc, withPokemon: poke.pokedexId+1)
+    }
 }
 
